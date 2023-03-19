@@ -28,6 +28,7 @@ public class ArcGauge extends FullGauge {
     private float sweepAngle = 240;
     private float startAngle = 150;
     private float gaugeBGWidth = 20f;
+    private String unit;
 
     public ArcGauge(Context context) {
         super(context);
@@ -53,7 +54,7 @@ public class ArcGauge extends FullGauge {
         getGaugeBackGround().setStrokeWidth(gaugeBGWidth);
         getGaugeBackGround().setStrokeCap(Paint.Cap.ROUND);
         getGaugeBackGround().setColor(Color.parseColor("#D6D6D6"));
-        getTextPaint().setTextSize(35f);
+        getTextPaint().setTextSize(45f);
         setPadding(20f);
         setSweepAngle(sweepAngle);
         setStartAngle(startAngle);
